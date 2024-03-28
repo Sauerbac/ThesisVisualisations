@@ -2,8 +2,9 @@
 	import { onMount } from 'svelte';
 	import * as THREE from 'three';
 	import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+	import { base } from '$app/paths';
 
-	import { getData, getColorHex, getColorRGB } from '$lib/utils/importData';
+	import { getData, getColorHex } from '$lib/utils/importData';
 
 	let sliderValue = 0;
 	let data;
@@ -72,7 +73,7 @@
 
 		const geometry = new THREE.SphereGeometry(0.01, 16, 16);
 
-		data = await getData('/data.csv');
+		data = await getData(`${base}/data.csv`);
 
 		spheres = new Array();
 		data[0].forEach((element) => {
