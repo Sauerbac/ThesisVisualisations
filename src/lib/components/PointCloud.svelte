@@ -106,7 +106,7 @@
 	<div class="border border-black h-full my-auto p-2">
 		<div id="container" class="w-full h-[99%]"></div>
 	</div>
-	<div>
+	<div class="mx-4">
 		<input
 			class="w-full"
 			type="range"
