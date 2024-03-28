@@ -14,13 +14,13 @@
 		<div class="flex mx-auto font-semibold text-lg">
 			<a
 				href="{base}/"
-				class="px-8 py-4 border-b-4 {$page.url.pathname === '/'
+				class="px-8 py-4 border-b-4 {$page.url.pathname === `${base}/`
 					? 'border-teal-600'
 					: 'hover:border-zinc-400'}">Animation</a
 			>
 			<a
 				href="{base}/explorer"
-				class="px-8 py-4 border-b-4 {$page.url.pathname === '/explorer'
+				class="px-8 py-4 border-b-4 {$page.url.pathname === `${base}/explorer`
 					? 'border-teal-600'
 					: 'hover:border-zinc-400'}">Explorer</a
 			>
